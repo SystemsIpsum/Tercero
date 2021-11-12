@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álgebra Lineal</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/Proyecto.css">
+    <script src="js/scrollreveal.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--ir arriba-->
+    <div class="go-top">
+        <span><i class="fas fa-angle-up"></i></span>
+    </div>
+
+    <!--Menu de navegacion -->
+    <header id="header">
+        
+        <nav class="menu">
+            <div class="logo-box">
+                <a title="Inicio" href="index.html"><img src="img/logo.png" alt=""></a>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="list-container">
+                <ul class="listas">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="IndexM.html" class="activo">Matemáticas</a></li>
+                    <li><a href="IndexP.html">Programación</a></li>
+                    <li><a href="IndexF.html">Física</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+         <!--IMG header-->
+         <div class="img-algebra">
+            <div class="algebra">
+                <h1>
+                    <b>Álgebra Lineal</b>
+                    <hr>
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <!--Inicio-->
+    <section class="inicio">
+        <div class="info-container">
+            <h1>Bienvenido a Álgebra Lineal</h1>
+
+            <div class="tema-inecuaciones">
+                <h2>TEMA</h2>
+                <h2>MATRIZ</h2>
+            </div>
+
+            <p class="defi-disc">Una matriz es una tabla cuadrada o rectangular de datos <b>(llamados elementos)</b> ordenados en filas y columnas, donde una fila es cada una de las líneas horizontales de la matriz y una columna es cada una de las líneas verticales. A una matriz con m filas y n columnas se le denomina matriz m-por-n <b>(escrito m×n)</b>. Las dimensiones de una matriz siempre se dan con el número de filas primero y el número de columnas después.</p>
+            <p class="defi-disc">Comúnmente se dice que una matriz m-por-n tiene un orden de <b>m × n</b> ("orden" tiene el significado de tamaño). Dos matrices se dice que son iguales si son del mismo orden y tienen los mismos elementos.</p>
+            <P class="defi-disc"><b> Ejemplo:</b></P>
+            <div class="img-alg">
+                <img src="img/alg1.png" alt="">
+            </div>
+            
+
+            <h2 class="titulos-alg">Matriz Inversa</h2><br>
+            <p class="defi-disc"><b>Definición:</b>Recuerda que si A es una matriz cuadrada de dimensión <b>nxn</b> y es regular (su determinante es distinto de 0), entonces existe una matriz llamada matriz inversa de <b>A, A^−1</b>, tal que: </p>
+            <p>A^-1 es de dimensión nxn</p>
+            <p>A^-1 es el inverso multiplicativo de A  por ambos lados, es decir</p>
+            <div class="img-alg">
+                <img src="img/alg2.png" alt="">
+            </div>
+
+            <p class="defi-disc">siendo In la matriz identidad de dimensión nxn. Su determinante es: </p>
+            <div class="img-alg">
+                <img src="img/alg3.png" alt="">
+            </div>
+
+            <p class="defi-disc">A^−1 es única, es decir, es la única matriz que cumple las igualdades del segundo punto.</p>
+
+            <p class="defi-disc"><b>Ejemplo:</b></p>
+
+            <p class="defi-disc">siendo In la matriz identidad de dimensión <b>nxn</b>. Su determinante es: </p>
+            <div class="img-alg">
+                <img src="img/alg4.png" alt="">
+            </div>
+
+            <p class="defi-disc"><b>INVERSA MEDIANTE LA ADJUNTA</b></p>
+            <p class="defi-disc">Para este método utilizaremos la siguiente fórmula:</p>
+            <div class="img-alg">
+                <img src="img/alg5.png" alt="">
+            </div>
+            <p class="defi-disc">Es decir, la matriz inversa de <b>A</b> es la matriz transpuesta de la matriz adjunta dividida entre el determinante de <b>A</b>.</p>
+            <p  class="defi-disc">Recordar que la matriz adjunta de A tiene la misma dimensión que <b>A</b> y se calcula con determinantes de submatrices.</p>
+            <p  class="defi-disc">El elemento de la posición fila <b>i</b> y columna <b>j</b> de la matriz adjunta de <b>A</b> es:</p>
+            <div class="img-alg">
+                <img src="img/alg6.png" alt=S"">
+            </div>
+            <p>Siendo la matriz <b>Aij</b> la submatriz de <b>A</b> obtenida al eliminar la fila <b>i</b> y columna <b>j</b> de <b>A</b>.</p>
+
+
+            <!--VECTOR-->
+
+            <div class="tema-inecuaciones">
+                <h2>TEMA</h2>
+                <h2>VECTOR</h2>
+            </div>
+
+
+            <p class="defi-disc">Al segmento de recta dirigido de <b>P</b> a <b>Q</b> se le conoce como vector.</p>
+            <div class="img-alg">
+                <img src="img/alg7.png" alt="">
+            </div>
+            <p>Un vector posee magnitud y dirección.</p><!--CENTRADO-->
+            <P>| v | = (a2 + b2)1/2</P><!--CENTRADO-->
+            <P>tg   = b / a</P>
+
+            <p class="defi-disc"><b>A) Vector Columna:</b> consta de n renglones y una sola columna.</p>
+
+            <p class="defi-disc"><b>B) Vector Regular:</b> consta de un solo renglón y n columnas.</p>
+            <div class="img-alg">
+                <img src="img/alg8.png" alt="">
+            </div>
+
+            <p class="defi-disc"><b>C)	Vector Columna:</b> consta de n renglones y una sola columna</p>
+            <div class="img-alg">
+                <img src="img/alg9.png" alt="">
+            </div>
+
+
+            <p class="defi-disc"><b>D) Vector transpuesto:</b> proporcionar una alternativa para la multiplicación de vectores</p>
+            <div class="img-alg">
+                <img src="img/alg10.png" alt="">
+                <img src="img/alg11.png" alt="">
+            </div>
+
+
+            <p class="defi-disc"><b>E)	vector unitario:</b> es aquel cuya magnitud es igual a 1.</p>
+
+        </div>
+    </section>
+
+    <section class="creditos">
+        <div class="info-creditos">
+            <div class="img-creditos">
+                <img src="img/logo.png" alt="">
+            </div>
+            <h2 class="tit-creditos">
+                Systems Ipsum
+            </h2>
+
+
+        </div>
+        <div class="contenido-creditos">
+            <h3>https://www.uv.mx/personal/aherrera/files/2014/08/11d.-ALGEBRA-DE-MATRICES-4.pdf</h3>
+            <h3>https://www.significados.com/vector/</h3>
+        </div>
+    </section>
+
+    
+    <!--Scripts -->
+    <script src="https://kit.fontawesome.com/9e4617c8b2.js" crossorigin="anonymous"></script>
+    <script src="js/Web.js"></script>
+    <script src="js/index.js"></script>
+
+    
+</body>
+</html>

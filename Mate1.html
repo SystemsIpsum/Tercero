@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas 1</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/Proyecto.css">
+    <script src="js/scrollreveal.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--ir arriba-->
+    <div class="go-top">
+        <span><i class="fas fa-angle-up"></i></span>
+    </div>
+
+    <!--Menu de navegacion -->
+    <header id="header">
+        
+        <nav class="menu">
+            <div class="logo-box">
+                <a title="Inicio" href="index.html"><img src="img/logo.png" alt=""></a>
+                <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="list-container">
+                <ul class="listas">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="IndexM.html" class="activo">Matemáticas</a></li>
+                    <li><a href="IndexP.html">Programación</a></li>
+                    <li><a href="IndexF.html">Física</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+            
+        <!--IMG header-->
+        <div class="img-mate">
+            <div class="mate1">
+                <h1>
+                    <b>Matemáticas 1</b>
+                    <hr>
+                </h1>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--Inicio-->
+    <section class="inicio">
+        <div class="info-container">
+            <h1>Bienvenido a Matemáticas 1</h1>
+            
+            
+            <div class="tema-derivadas">
+                <h2>TEMA</h2>
+                <h2>DERIVADAS</h2>
+            </div>
+            
+            <!--Informacion derivadas-->
+
+            <div class="info-derivadas">
+
+                <p class="defi-deri"><b>DEFINICIÓN:</b> La derivada de la función <b>f(x)</b> en el punto <b>x = a</b> es el valor del límite, si existe, de un cociente incremental cuando el incremento de la variable tiende a cero. Además, las derivadas nos indican como cambia puntualmente algo en relación a otro valor que también lo hace, también describen los cambios de las funciones y las funciones describen el comportamiento de las cosas.</P>
+                
+                <P class="defi-deri">Antes de empezar con la explicación de algunos ejercicios deberemos tener presente los siguientes conceptos o reglas que son fundamentales para la solución de ejercicios con derivada. En este caso veremos las “4” reglas primordiales:</P>
+
+                <section class="fondo-deri">
+                    <div class="deg-fondo"></div>
+            
+                    <div class="ejeZproject">
+                        <div class="contenedor-inge">
+            
+                            <div class="titulo">
+                                <h2>Fórmulas</h2>
+                                <hr>
+                            </div>
+            
+                            <div class="gallery-derivadas">
+                                <img src="img/deri-form1.png" alt="">
+                                <img src="img/deri-form2.png" alt="">
+                                <img src="img/deri-form3.png" alt="">
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+            
+                <p class="defi-deri"><b>1. Derivada de la Suma:</b>Es igual a la suma de las derivadas de dichas funciones.</p> 
+                    <p>F(x)=U±V</p><p>F'(x)=U'±V'</p>
+                </br>
+                    <p class="defi-deri"><b>EJEMPLO:</b> Calcular la derivada por medio de la regla de la Suma:</h3>
+                </br>
+                    <p>F(x)=-2x^2-5x+2</p>
+                    <p><b>SOLUCIÓN:</b></p>
+                    <p>F'(x)=-4x-5</p>
+                </br>
+        
+                <p class="defi-deri"><b>2. Derivada del Cociente:</b> Derivada del numerador por el denominador menos la derivada del denominador por el numerador, divididas por el cuadrado del denominador.</p>
+                <p>F(x)=u/v	F(x)=(u^'*v-u*v')/v^2 </p>
+                </br>
+                <p class="defi-deri"><b>EJEMPLO:</b> Calcular la derivada por medio de la regla del Cociente:</h3>
+                </br>
+                <p>F(x)=(3(x^2+2)^3)/5</p>
+                    <p><b>SOLUCIÓN:</b></p>
+                    <p> F(x)=3/5(x^2+2)^3</p>
+                    <p> F'(x)=3/5*3(x^2+2)^2*2x</p>
+                    <p> F'(x)=18/5 x(x^2+2)^2</p>
+                </br>
+        
+                <p class="defi-deri"><b>3. Derivada del Producto: </b> Primer factor por la derivada del segundo más el segundo factor por la derivada del primero.<p>
+                </br>
+                <p>f^'=u^' (x)*v(x)+v^' (x)*u(x)</p>
+                <p>f^'=u^'*v+v^'+u</p>
+                </br>
+        
+                <p class="defi-deri"><b>EJEMPLO:</b> Calcular la derivada por medio de la regla del Producto:</p>
+                </br>
+                    <p>F(x)=(x^2-1)(x^3+3x)</p>
+                    <p><b>SOLUCIÓN:</b></p>
+                </br>
+                    <p>f^' (x)=(2x)(x^3+3x)+(3x+3)(x^2-1)</p>
+                    <p>=(2x^4+6x^2)+(3x^3+3x^2-3x-3)</p>
+                    <p>=2x^4+3x^3+9x^2-3x-3</p>
+        
+                <p class="defi-deri"><b>4. Derivada de la Cadena: </b> fórmula resultante de la derivada de la composición de funciones.</p>
+                </br>
+                <p>(g*f)^' (x)=g^' (f(x))*f'(x)</p>
+                </br>
+                <p class="defi-deri"><b>EJEMPLO N° 1: </b>Calcular la derivada por medio de la regla de la Cadena:</p>
+                </br>
+                    <p>f(x)=lncos2x</p>
+                    <p><b>SOLUCIÓN:</b></p>
+                </br>
+                    <p>f^' (x)=(-2sen2x )/cos2x</p>
+                    <p>f^' (x)=-2tan2x</p>
+                </br>   
+                <p class="defi-deri"><b>EJEMPLO N° 2:</b></p>
+                <p>f(x)=2√(ln⁡(1-3x))</p>
+                    <p><b>SOLUCIÓN:</b></p>
+                    </br>
+                    <p>f^' (x)=cos⁡√(ln⁡(1-3x))*1/(2√(ln⁡(1-3x) ))*1/(1-3x)*(-3)</p></br></br>
+                <!--Informacion derivadas-->
+
+                <!--Informacion Limites-->
+                <div class="tema-derivadas">
+                    <h2>TEMA</h2>
+                    <h2>LIMITES</h2>
+                </div>
+    
+                <p class="defi-deri"> <b>CONCEPTO DE LIMITE:</b> Magnitud a la que se acercan progresivamente los términos de una secuencia infinita de magnitudes. Un límite matemático, por lo tanto, expresa la tendencia de una función o de una sucesión mientras sus parámetros se aproximan a un cierto valor.</P>
+
+                <p class="defi-deri"><b>1. Ejercicios Por definición de límites:</b></p>
+                <P>lim┬(x→1)⁡〖((x+3)/2)^ 〗</p>
+                <p class="defi-deri">Sustitución de la variable <b>x</b></p>
+                <div class="mate-img">
+                    <img src="img/sustitucionX.PNG" alt="">
+                </div>
+                <p class="defi-deri"><b>2. Cálculo de límites</b></p>
+                <p>
+                    lim┬(x→-∞)⁡〖(√(x^2+3x)-√(x^2+x))〗
+                    </p>
+                <p class="defi-deri">Para resolver este ejercicio necesitaremos utilizar la siguiente fórmula:</p>
+                <div class="mate-img">
+                    <img src="img/lim-prop1.png" alt="">
+                </div>
+                <p class="defi-deri">Entonces</p>
+                <div class="mate-img">
+                    <img src="img/ejercicio1de3.png" alt="">
+                </div>
+                <p class="defi-deri">Los siguientes pasos los vamos a manipular algebraicamente, entonces vamos a racionalizar, para ello vamos a multiplicar y dividir el conjugado:</p>
+                <div class="mate-img">
+                    <img src="img/ejercicio2de3.png" alt="">
+                </div>
+                <p class="defi-deri">Como necesitamos deshacernos de la indeterminaste entonces vamos a multiplicar y dividir por <b>1/x</b>:</p>
+                <div class="mate-img">
+                    <img src="img/ejercicio3de3.png" alt="">
+                </div>
+
+
+                <p class="defi-deri"><b>3. LIMITES DE UNA FUNCIÓN ELEVADA A OTRA FUNCIÓN</b></p>
+                <p class="defi-deri">Para recordar:</p>
+                <div class="mate-img">
+                    <img src="img/para-recordar.PNG" alt="">
+                </div>
+                <p class="defi-deri"><b>EJEMPLO:</b></p>
+                <div class="mate-img">
+                    <img src="img/elevad.1.png" alt="">
+                </div>
+                <p class="defi-deri"><b>SOLUCIÓN:</b></p>
+                <p class="defi-deri">En este caso lo evaluamos en ∞</p>
+                <div class="mate-img">
+                    <img src="img/elevad.2.png" alt="">
+                </div>
+                <p class="defi-deri">Vamos a sumar y restar 2 en el exponente, quedando de la siguiente manera:</p>
+                <div class="mate-img">
+                    <img src="img/elevad.3.png" alt="">
+                </div>
+                <p class="defi-deri">Recordando, debemos utilizar las propiedades exponenciales</p>
+                <div class="mate-img">
+                    <img src="img/elevad.4.png" alt="">
+                </div>
+                <p class="defi-deri">Por último, tendremos el límite resuelto de la siguiente manera:</p>
+                <div class="mate-img">
+                    <img src="img/elevad.5.png" alt="">
+                </div>
+
+                <p class="defi-deri"><b>En la galería encontraras una serie de ejercicios que te ayudarán a colocar en practica tus conocimientos. </b></p>
+  
+                <section class="fondo-deri">
+                    <div class="deg-fondo"></div>
+            
+                    <div class="ejeZproject">
+                        <div class="contenedor-inge">
+            
+                            <div class="titulo">
+                                <h2>Fórmulas</h2>
+                                <hr>
+                            </div>
+            
+                            <div class="gallery-derivadas">
+                                <img src="img/ejercicios.practica.png" alt="">
+                                <img src="img/biblioteca.limites.png" alt="">
+                                <img src="img/deri-form3.png" alt="">
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+                
+                <!--Informacion Limites-->
+
+            </div>
+
+        </div>
+
+        
+        
+    </section>
+    <section class="creditos">
+        <div class="info-creditos">
+            <div class="img-creditos">
+                <img src="img/logo.png" alt="">
+            </div>
+            <h2 class="tit-creditos">
+                Systems Ipsum
+            </h2>
+
+
+        </div>
+        <div class="contenido-creditos">
+            <h3>https://www.superprof.es/apuntes/escolar/matematicas/calculo/derivadas/</h3>
+            <h3>https://www.problemasyecuaciones.com/limites/calculo-limites-explicados-metodos-reglas-procedimientos-indeterminaciones-grados-infinito-resueltos.html</h3>
+        </div>
+    </section>
+
+
+    <!--Scripts -->
+    <script src="https://kit.fontawesome.com/9e4617c8b2.js" crossorigin="anonymous"></script>
+    <script src="js/Web.js"></script>
+    <script src="js/index.js"></script>
+
+    
+</body>
+</html>
